@@ -1,0 +1,282 @@
+$color1: burlywood;
+$color2: palevioletred; 
+$font1: "Times New Roman", Times, serif; 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+//* "recetas"inicio *//
+
+.titulo1{
+    padding-inline-start: 70%;
+    font-size: 200%;
+    padding-block-end: 10%;
+    padding-block-start: 5%;
+}
+
+//* "recetas" fin *//
+
+p{
+     
+    font-size: 30px;
+    font-family: 'Trebuchet MS' ;
+    margin: 15%;
+
+span{
+    font-family: 'Times New Roman', Times, serif;
+    color: $color2;
+
+}
+}
+
+
+//* navbar inicio *//
+
+.bg-dark {
+    --bs-bg-opacity: 0;
+    background-color: $color1 !important;
+}
+.navbar-nav{
+    padding-left: 25%;
+
+a.nav-link.nombres{
+    color: white;
+}
+}
+nav ul li{
+    display: inline;
+    margin: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+
+//* navbar fin *//
+
+
+//* incio "publicidad" *//
+
+.jumbotron{
+    background-image: url(/img/negro.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align-last: center;
+
+.text{
+    margin-block-end: 25%;
+    margin-right: auto;
+    margin-left: 50%;
+}
+
+
+.segundo{
+    color: transparent;
+}
+}
+
+//* fin "publicidad" *//
+
+//* inicio footer *//
+
+.footer {
+    width: 100%;
+    display: grid;
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 110px;
+    background-image: linear-gradient(to right,$color1 60%, pink)
+}
+.h2, h2 {
+    font-size: 22px;
+    color: $color2;
+    font-family: $font1;
+}
+a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+}
+
+//* fin footer *//
+
+
+.main{
+
+    padding: 3%;
+    width: 70%;
+
+}
+
+//* inicio subtitulos *//
+
+.t1{
+    margin-block-end: 15px;
+    font-size: 150%;
+}
+
+h1.lead.titulo1{
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+//* fin subtitulos *//
+
+
+//* inicio foto de recetas *//
+.contenedor{
+
+        display: grid;
+        grid-template-areas: 
+        "item1 item2 item3";
+
+        grid-template-columns: 400px 400px 400px;
+    
+        grid-template-rows: 400px 400px 400px;
+    
+        grid-gap: 40px;
+
+        height: 500px;
+        width: 100%;
+    }
+    .item{
+
+        height: 400px;
+        width: 400px;
+    }
+    .item1{
+
+        grid-area: item1;
+        background-image: url(img/img1.png);
+        background-size: cover;
+        background-position: center;
+        grid-column: 1/2;
+
+     
+    }
+    .item2{
+        grid-area: item2;
+        background-image: url(img/5.jpg);
+        background-size: cover;
+        background-position: center;
+        grid-column: 2/3;
+     
+    }
+    .item3{
+        grid-area: item3;
+        background-image: url(img/tiramisu.jpg);
+        background-size: cover;
+        background-position: center;
+        grid-column: 3/4;
+     
+    }
+    .textos{
+        display: grid;
+        font-size: 20px;
+        display: inline-block;
+        width: 10%;
+        padding: 5px 5px 5px 5px;
+        color: 5px;
+        margin: 18px;
+        border: none; 
+        width: 100%;
+        height: 80px;
+    }
+    .muffins{
+        text-align: center;
+        text-decoration: none;
+        font-size: 120%;
+    }
+    .muffins a{
+        text-decoration: none;
+        color: black;
+    }
+    .chess{
+        text-align: center;
+        font-size: 120%;
+    }
+    .tiramisu{
+        text-align: center;
+        font-size: 120%;
+    }
+
+    //* fin foto de recetas *//
+
+
+    .contenedor2{
+
+        display: grid;
+        grid-template-areas: 
+        "item4 item5";
+        background-color: none;
+    
+        grid-template-rows: 400px 50px;
+    
+        grid-gap: 60px;
+    
+        padding: 20px;
+        height: 600px;
+    }
+    .item{
+        border: 0px solid white;
+    }
+    .item4{
+
+        grid-area: item4;
+        background-color: violet;
+        background-image: url(img/img1.png);
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .item5{
+        grid-area: item5;
+        background-color: tomato;
+        background-image: url(img/img2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+.cuestionario{
+    padding-top: 5;
+    padding: auto;
+    display: inline;
+    height: 300px;
+    width: 300px;
+    display:flex;
+    margin: 0 auto; 
+    width:250px;
+    align-content: center;
+
+
+}
+fieldset {
+    min-width: 5%;
+    padding: 5%;
+    position: static;
+    align-content: center;
+}
+
+
+.tabla{
+    float: right;
+    padding: 10px;
+}
+.preparacion{
+    font-size: 25px;
+    padding-left: 30px;
+}
+.lorem{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    inline-size: 50%
+}
+
+
+@import "_media.scss"
