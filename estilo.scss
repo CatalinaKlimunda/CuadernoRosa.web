@@ -61,31 +61,14 @@ nav ul li{
 //* incio "publicidad" *//
 
 .jumbotron{
-    background-image: url(/img/fondo.jpg);
+    background-image: url(/img/fijo2.jpg);
     background-position: center;
     background-size: cover;
-    color: white;
+    color: black;
     text-align-last: center;
-
-.text{
-    margin-block-end: 25%;
-    margin-right: auto;
-    margin-left: 50%;
-}
-
-
-.segundo{
-    color: transparent;
-}
 }
 
 //* fin "publicidad" *//
-
-
-//* inicia rectas *//
-
-
-//* fin rectas *//
 
 
 
@@ -98,42 +81,19 @@ nav ul li{
 .box__footer {
     display: flex;
     flex-direction: column;
-    padding: 110px;
     background-image: linear-gradient(to right,$color1 60%, pink)
 }
-.h2, h2 {
-    font-size: 22px;
-    color: $color2;
-    font-family: $font1;
+
+.navbar-footer{
+    text-align: center;
 }
 a {
     color: white;
     text-decoration: none;
-    background-color: transparent;
-}
+    
 }
 
 //* fin footer *//
-
-//* nosotros inicio*//
-h4.pregunta{
-    margin-block-end: 2%;
-    margin-block-start: 3%;
-    margin-inline-start: 2%;
-    background-color: seashell;
-}
-
-h5.respuesta{
-    margin-block-end: 2%;
-    margin-block-start: 3%;
-    margin-inline-start: 2%;
-}
-
-
-//* nosotros fin*//
-
-
-
 
 .main{
 
@@ -168,76 +128,7 @@ h1.coleccion{
 }
 
 
-//* inicio foto de recetas *//
 
-    
-
-
-
-    //* fin foto de recetas *//
-
-
-    .contenedor2{
-
-        display: grid;
-        grid-template-areas: 
-        "item4 item5";
-        background-color: none;
-    
-        grid-template-rows: 400px 50px;
-    
-        grid-gap: 20px;
-    
-        padding: 50px;
-        height: 600px;
-        margin-block-start: 10%;
-        margin-inline-start: 10%;
-    }
-    .item{
-        border: 0px solid white;
-    }
-    .item4{
-
-        grid-area: item4;
-        background-color: violet;
-        background-image: url(img/img1.png);
-        background-size: cover;
-        background-position: center;
-        
-    }
-    .item5{
-        grid-area: item5;
-        background-color: tomato;
-        background-image: url(img/img2.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-
-    h3.tiramisu{
-        margin-right: 35%;
-    }
-    h3.chess{
-        margin-right: 35%;
-    }
-.cuestionario{
-    padding-top: 5;
-    padding: auto;
-    display: inline;
-    height: 300px;
-    width: 300px;
-    display:flex;
-    margin: 0 auto; 
-    width:250px;
-    align-content: center;
-
-
-}
-fieldset {
-    min-width: 5%;
-    padding: 5%;
-    position: static;
-    align-content: center;
-}
 
 h2.preparar{
     font-size: 25px;
@@ -263,17 +154,20 @@ $redes: (
        color: $color;
    }
 }
-.jumbotron2{
-    @extend .jumbotron;
-    height: 500px;
+
+
+.jumbotron3{
+    background-image: url(/img/dulces6.jpg);
+    background-position-x: center;
+    height: 400px;
+    width: 80%;
+    margin-left: 10%;
+    margin-block-end: 15%;
+
+
 }
 
 
-
-
-
-
-
-
 @import "_media.scss";
-@import "_cards.scss"
+@import "_cards.scss";
+@import "_receta.scss"
