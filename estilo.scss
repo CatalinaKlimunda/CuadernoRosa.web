@@ -1,9 +1,11 @@
 $color1: burlywood;
-$color2: palevioletred; 
-$font1: "Times New Roman", Times, serif; 
+$color2: palevioletred;
+$font1: "Times New Roman",
+Times,
+serif;
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +13,7 @@ $font1: "Times New Roman", Times, serif;
 
 //* "recetas" inicio *//
 
-.titulo1{
+.titulo1 {
     padding-inline-start: 70%;
     font-size: 200%;
     padding-block-end: 10%;
@@ -21,17 +23,17 @@ $font1: "Times New Roman", Times, serif;
 //* "recetas" fin *//
 
 
-p{
-     
+p {
+
     font-size: 30px;
-    font-family: 'Trebuchet MS' ;
+    font-family: 'Trebuchet MS';
     margin: 15%;
 
-span{
-    font-family: 'Times New Roman', Times, serif;
-    color: $color2;
+    span {
+        font-family: 'Times New Roman', Times, serif;
+        color: $color2;
 
-}
+    }
 }
 
 
@@ -41,18 +43,19 @@ span{
     --bs-bg-opacity: 0;
     background-color: $color1 !important;
 }
-.navbar-nav{
+
+.navbar-nav {
     padding-left: 25%;
 
-a.nav-link.nombres{
-    color: white;
+    a.nav-link.nombres {
+        color: white;
+    }
 }
-}
-nav ul li{
+
+nav ul li {
     display: inline;
     margin: 30px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 //* navbar fin *//
@@ -60,12 +63,20 @@ nav ul li{
 
 //* incio "publicidad" *//
 
-.jumbotron{
+.jumbotron {
     background-image: url(/img/fijo2.jpg);
     background-position: center;
     background-size: cover;
-    color: black;
-    text-align-last: center;
+    color: #463206;
+    text-align: right;
+
+}
+
+.propa {
+
+    font-family: "Anton script=latin rev=2";
+    font-weight: 1000;
+    font-style: oblique;
 }
 
 //* fin "publicidad" *//
@@ -78,24 +89,27 @@ nav ul li{
     width: 100%;
     display: grid;
 
-.box__footer {
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(to right,$color1 60%, pink)
-}
+    .box__footer {
+        display: flex;
+        height: 250px;
+        flex-direction: column;
+        background-image: linear-gradient(to right, $color1 60%, pink)
+    }
 
-.navbar-footer{
-    text-align: center;
-}
-a {
-    color: white;
-    text-decoration: none;
-    
+    .navbar-footer {
+        margin-block-start: 175px;
+    }
+
+    .footer-copyright {
+        color: white;
+        text-decoration: none;
+
+    }
 }
 
 //* fin footer *//
 
-.main{
+.main {
 
     padding: 3%;
     width: 70%;
@@ -104,59 +118,49 @@ a {
 
 //* inicio subtitulos *//
 
-.t1{
+.t1 {
     margin-block-end: 15px;
     font-size: 150%;
     margin-top: none;
     margin-block-end: 50px;
 }
 
-h1.lead.titulo1{
+h1.lead.titulo1 {
     margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 //* fin subtitulos *//
 
-h1.coleccion{
-   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-   margin-left: 45%;
-   margin-block-start: 5%;
-   margin-block-end: 5%;
-   font-weight: 300;
-   font-size: 200%;
+h1.coleccion {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-left: 45%;
+    margin-block-start: 5%;
+    margin-block-end: 5%;
+    font-weight: 300;
+    font-size: 200%;
 }
 
 
 
 
-h2.preparar{
-    font-size: 25px;
-    padding-left: 30px;
-    margin-block-end: 2%;
-    margin-block-start: 3%;
-    margin-inline-start: 2%;
-    background-color: seashell;
-}
+$redes: (
+    /*Declaramos nuestro mapa*/
+    red1: rgb(248, 112, 134),
+    red2: black,
 
-
-$redes: ( 
-    
-/*Declaramos nuestro mapa*/
-        red1: rgb(248, 112, 134),
-        red2: black,
-    
-); 
+);
 
 /*Creamos el bucle para usar los valores del mapa*/
-@each $red, $color in $redes {
-   .circulo--#{$red} {
-       color: $color;
-   }
+@each $red,
+$color in $redes {
+    .circulo--#{$red} {
+        color: $color;
+    }
 }
 
 
-.jumbotron3{
+.jumbotron3 {
     background-image: url(/img/dulces6.jpg);
     background-position-x: center;
     height: 400px;
