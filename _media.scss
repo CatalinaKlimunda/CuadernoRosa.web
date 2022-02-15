@@ -1,407 +1,392 @@
-@media only screen and (min-width: 0px) and (max-width: 667px) {
+@media only screen and (min-width: 0px) and (max-width: 575px) {
 
+    .propa {
 
-
-    .contenedor {
-
-        display: block;
-        grid-template-areas:
-            "item1"
-            "item2"
-            "item3";
-
-        grid-template-columns: 0% 0% 0%;
-
-        grid-template-rows: 500px 500px 500px;
-
-
-        height: 1500px;
-        width: 100%;
-        margin: 20%;
+        font-family: "Anton script=latin rev=2";
+        font-weight: 1000;
+        font-style: oblique;
+        font-size: 25px;
     }
-
-    .item1 {
-
-        grid-area: item1;
-        background-image: url(img/img1.png);
-        grid-column: 1/2;
-        grid-row: 1/2;
-
-
-    }
-
-    .item2 {
-        grid-area: item2;
-        background-image: url(img/5.jpg);
-        grid-column: 2/3;
-        grid-row: 2/3;
-
-    }
-
-    .item3 {
-        grid-area: item3;
-        background-image: url(img/tiramisu.jpg);
-        grid-column: 3/3;
-        grid-row: 3/3;
-
-    }
-
-    .muffins {
-        margin-left: 30%;
-        margin-block-end: 10%;
-        margin-block-start: 10%;
-        text-decoration: none;
-        font-size: 120%;
-    }
-
-    .muffins a {
-        text-decoration: none;
-        color: black;
-    }
-
-    .chess {
-        margin-left: 30%;
-        margin-block-end: 10%;
-        margin-block-start: 10%;
-        font-size: 120%;
-    }
-
-    .tiramisu {
-        margin-left: 30%;
-        margin-block-end: 10%;
-        margin-block-start: 10%;
-        font-size: 120%;
-    }
-
-    .t1 {
-        margin-block-end: 15px;
-        font-size: 150%;
-    }
-
-    .titulo {
-        text-align: right;
-        margin-top: 20px;
-        margin-block-end: 20px;
-    }
-
-    .contenedor2 {
-
-        display: grid;
-        grid-template-areas:
-            "item4""item5";
-        background-color: none;
-
-        grid-template-rows: 400px 50px;
-
-        grid-gap: 60px;
-
-        padding: 20px;
-        height: 600px;
-    }
-
-    .item4 {
-
-        grid-area: item4;
-        background-color: violet;
-        background-image: url(img/img1.png);
-        background-size: cover;
-        background-position: center;
-
-    }
-
-    .item5 {
-        grid-area: item5;
-        background-color: tomato;
-        background-image: url(img/img2.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-
-    .titulo {
-        text-align: center;
-    }
-
-    .encontra {
-        font-size: 20px;
-        margin-block-end: 150px;
-    }
-
-    .box__footer {
-        margin-block-start: 100%;
-    }
-
-    .chess {
-        color: transparent;
-    }
-
-    .tiramisu {
-        color: transparent;
-    }
-
 
 }
 
-@media only screen and (min-width: 667px) and (max-width: 800px) {
+.comida {
+    text-align: center;
+    margin-block-start: 30px;
+}
 
-    .contenedor {
+.t1 {
+    margin-block-start: 70px;
+    margin-inline-start: 10px;
 
-        display: block;
-        grid-template-areas:
-            "item1"
-            "item2"
-            "item3";
-
-        grid-template-columns: 0% 0% 0%;
-
-        grid-template-rows: 500px 500px 500px;
+}
 
 
-        height: 1500px;
-        width: 100%;
-        margin: 20%;
+
+.card {
+    border: none;
+    width: 300px;
+    margin-inline-start: 85px;
+    display: ruby;
+}
+
+
+
+
+.boton3 {
+    background-color: burlywood;
+    border-color: burlywood;
+}
+
+.formulario {
+    margin-left: 90px !important;
+    width: 70% !important;
+
+}
+
+.preguntacc {
+    margin-block-start: 80px;
+    font-size: 18px !important;
+}
+
+.jumbotron3 {
+    height: 1200px;
+    background-size: 700px;
+}
+
+
+.receta1 {
+    margin-inline-start: 30px !important;
+}
+
+
+.formulario {
+    width: 50%;
+    margin-block-end: 160px;
+    margin-block-start: 40px;
+    margin-inline-start: 400px;
+
+}
+
+
+
+
+@media only screen and (min-width: 576px) and (max-width: 800px) {
+
+    nav ul li {
+        display: inline;
+        text-align: center;
+        margin-left: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     }
 
-    .item1 {
+    p {
 
-        grid-area: item1;
-        background-image: url(img/img1.png);
-        background-position: right;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        margin-left: 10%;
+        font-size: 18px;
+        font-family: 'Trebuchet MS';
+        margin: 15%;
+        margin-inline-start: 30px;
 
+        span {
+            font-family: 'Times New Roman', Times, serif;
+            color: $color2;
 
+        }
     }
 
-    .item2 {
-        grid-area: item2;
-        background-image: url(img/5.jpg);
-        background-position: center;
-        grid-column: 2/3;
-        grid-row: 2/3;
-        margin-left: 10%;
 
+
+    .navbar-nav {
+        padding-left: 5%;
+
+        a.nav-link.nombres {
+            color: white;
+        }
     }
 
-    .item3 {
-        grid-area: item3;
-        background-image: url(img/tiramisu.jpg);
-        background-position: center;
-        grid-column: 3/3;
-        grid-row: 3/3;
-        margin-left: 10%;
+    .propa {
 
-
+        font-family: "Anton script=latin rev=2";
+        font-weight: 2000;
+        font-style: oblique;
+        font-size: 25px;
     }
 
-    .muffins {
-
-        margin-block-end: 10%;
-        margin-block-start: 10%;
-        text-decoration: none;
-        font-size: 120%;
-    }
-
-    .muffins a {
-        text-decoration: none;
-        color: black;
-    }
-
-    .chess {
-        color: transparent;
-    }
-
-    .tiramisu {
-        color: transparent;
+    .comida {
+        text-align: center;
+        margin-block-start: 30px;
     }
 
     .t1 {
-        margin-block-end: 15px;
-        font-size: 150%;
-    }
-
-    .contenedor2 {
-
-        display: grid;
-        grid-template-areas:
-            "item4"
-            "item5";
-        background-color: none;
-
-        grid-template-rows: 400px 50px;
-
-        grid-gap: 60px;
-
-        padding: 20px;
-        height: 600px;
-    }
-
-    .item4 {
-
-        grid-area: item4;
-        background-color: violet;
-        background-image: url(img/img1.png);
-        background-size: cover;
-        background-position: center;
+        margin-block-start: 70px;
+        margin-inline-start: 10px;
 
     }
 
-    .item5 {
-        grid-area: item5;
-        background-color: tomato;
-        background-image: url(img/img2.jpg);
-        background-size: cover;
-        background-position: center;
+
+
+    .card {
+        border: none;
+        width: 300px;
+        margin-inline-start: 180px !important;
     }
 
-    .titulo {
+    .card-deck {
+        display: inline;
+    }
+
+
+    .añadir {
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .boton3 {
+        background-color: burlywood;
+        border-color: burlywood;
+    }
+
+    .formulario {
+        margin-left: 90px !important;
+        width: 70% !important;
+
+    }
+
+    .jumbotron3 {
+        height: 1200px;
+        background-size: 700px;
+    }
+
+
+    .receta1 {
+        margin-inline-start: 30px !important;
+    }
+
+    .boton2 {
+        width: 205px !important;
+    }
+
+}
+
+@media only screen and (min-width: 801px) and (max-width: 900px) {
+
+    nav ul li {
+        display: inline;
         text-align: center;
+        margin-left: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     }
 
-    .chess {
-        color: transparent;
+    p {
+
+        font-size: 18px;
+        font-family: 'Trebuchet MS';
+        margin: 15%;
+        margin-inline-start: 30px;
+
+        span {
+            font-family: 'Times New Roman', Times, serif;
+            color: $color2;
+
+        }
     }
 
-    .tiramisu {
-        color: transparent;
+    .bg-dark {
+        --bs-bg-opacity: 0;
+        background-color: $color1 !important;
     }
 
-    .box__footer {
-        margin-block-start: 100%;
+    .navbar-nav {
+        padding-left: 5%;
+
+        a.nav-link.nombres {
+            color: white;
+        }
+    }
+
+    .propa {
+
+        font-family: "Anton script=latin rev=2";
+        font-weight: 1000;
+        font-style: oblique;
+        font-size: 25px;
+    }
+
+    .comida {
+        text-align: center;
+        margin-block-start: 30px;
+        font-size: 15px;
+    }
+
+    .t1 {
+        margin-block-start: 70px;
+        margin-inline-start: 10px;
 
     }
 
 
-    @media (min-width: 800px) and (max-width: 1200px) {
-
-        nav ul li {
-            display: inline;
-            margin: 30px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-        }
-
-        .contenedor {
-
-            display: block;
-            grid-template-areas:
-                "item1"
-                "item2"
-                "item3";
-
-            grid-template-columns: 0% 0% 0%;
-
-            grid-template-rows: 500px 500px 500px;
+    .card-deck {
+        width: 760px !important;
+        margin-block-end: 50px;
+        margin-inline-start: 0px;
+    }
 
 
-            height: 1500px;
-            width: 100%;
-            margin: 20%;
-        }
 
-        .item1 {
+    .boton3 {
+        background-color: burlywood;
+        border-color: burlywood;
+    }
 
-            grid-area: item1;
-            background-image: url(img/img1.png);
-            background-position: right;
-            grid-column: 1/2;
-            grid-row: 1/2;
-            margin-left: 10%;
+    .formulario {
+        margin-left: 90px !important;
+        width: 70% !important;
 
+    }
 
-        }
+    .preguntacc {
+        margin-block-start: 80px;
+        font-size: 18px !important;
+    }
 
-        .item2 {
-            grid-area: item2;
-            background-image: url(img/5.jpg);
-            background-position: center;
-            grid-column: 2/3;
-            grid-row: 2/3;
-            margin-left: 10%;
-
-        }
-
-        .item3 {
-            grid-area: item3;
-            background-image: url(img/tiramisu.jpg);
-            background-position: center;
-            grid-column: 3/3;
-            grid-row: 3/3;
-            margin-left: 10%;
+    .jumbotron3 {
+        height: 1200px;
+        background-size: 700px;
+    }
 
 
-        }
+    .botonopp {
+        height: 50px !important;
+        width: 50px !important;
+        font-size: 20px !important;
+    }
 
-        .muffins {
-            margin-block-end: 10%;
-            margin-block-start: 10%;
-            text-decoration: none;
-            font-size: 120%;
-        }
+    .boton2 {
+        width: 105px !important;
+    }
 
-        .muffins a {
-            text-decoration: none;
-            color: black;
-        }
 
-        .chess {
-            margin-left: 10%;
-            margin-block-end: 10%;
-            margin-block-start: 10%;
-            font-size: 120%;
-        }
+    .formulario {
+        width: 50%;
+        margin-block-end: 160px;
+        margin-block-start: 40px;
+        margin-inline-start: 400px;
 
-        .tiramisu {
-            margin-left: 10%;
-            margin-block-end: 10%;
-            margin-block-start: 10%;
-            font-size: 120%;
-        }
+    }
 
-        .t1 {
-            margin-block-end: 15px;
-            font-size: 150%;
-        }
+}
 
-        .contenedor2 {
+@media only screen and (min-width: 901px) and (max-width: 1301px) {
 
-            display: grid;
-            grid-template-areas:
-                "item4"
-                "item5";
-            background-color: none;
 
-        }
+    p {
 
-        .item4 {
+        font-size: 30px;
+        font-family: 'Trebuchet MS';
+        margin: 15%;
 
-            grid-area: item4;
-            background-color: violet;
-            background-image: url(img/img1.png);
-            background-size: cover;
-            background-position: center;
+        span {
+            font-family: 'Times New Roman', Times, serif;
+            color: $color2;
 
-        }
-
-        .item5 {
-            grid-area: item5;
-            background-color: tomato;
-            background-image: url(img/img2.jpg);
-            background-size: cover;
-            background-position: center;
-        }
-
-        .chess {
-            margin-right: 30%;
-            margin-block-start: 1%;
-        }
-
-        .tiramisu {
-            margin-right: 30%;
-            margin-block-start: 1%;
-        }
-
-        .box__footer {
-            margin-block-start: 100%;
         }
     }
+
+
+    //* navbar inicio *//
+
+    .bg-dark {
+        --bs-bg-opacity: 0;
+        background-color: $color1 !important;
+    }
+
+    .navbar-nav {
+        padding-left: 25%;
+
+        a.nav-link.nombres {
+            color: white;
+        }
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 20px;
+        margin-inline-start: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    .propa {
+
+        font-family: "Anton script=latin rev=2";
+        font-weight: 1000;
+        font-style: oblique;
+        font-size: 25px;
+    }
+
+    .comida {
+        text-align: center;
+        margin-block-start: 30px;
+        font-size: 15px;
+    }
+
+    .t1 {
+        margin-block-start: 70px;
+        margin-inline-start: 10px;
+
+    }
+
+    .card-deck {
+        width: 860px !important;
+        margin-block-end: 50px;
+        margin-inline-start: 0px;
+    }
+
+
+    .boton3 {
+        background-color: burlywood;
+        border-color: burlywood;
+    }
+
+    .formulario {
+        margin-left: 90px !important;
+        width: 70% !important;
+
+    }
+
+    .preguntacc {
+        margin-block-start: 80px;
+        font-size: 18px !important;
+    }
+
+
+    .botonopp {
+        margin-block-start: 85px !important;
+        height: 50px !important;
+        width: 50px !important;
+        font-size: 20px !important;
+    }
+
+    .jumbotron3 {
+        height: 1200px;
+        background-size: 700px;
+
+    }
+
+    .boton2 {
+        width: 235px !important;
+    }
+
+
+
+
+
+    .formulario {
+        width: 50%;
+        margin-block-end: 160px;
+        margin-block-start: 40px;
+        margin-inline-start: 400px;
+
+    }
+
+
 }

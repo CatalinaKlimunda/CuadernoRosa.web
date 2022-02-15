@@ -33,13 +33,13 @@
             <a class="nav-link nombres" href="../index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nombres" href="categorias.html">Categorias</a>
+            <a class="nav-link nombres" href="perfil.html">Perfil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nombres" href="coleccion.html">Coleccion</a>
+            <a class="nav-link nombres" href="coleccion.html">Guardadas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nombres" href="#">Contacto</a>
+            <a class="nav-link nombres" href="3">Subir</a>
           </li>
           <li class="nav-item">
             <a class="nav-link nombres" href="nosotros.html">Nosotros</a>
@@ -54,41 +54,38 @@
   <main>
 
 
-    <div>
-      <h1 class="coleccion">Contacto</h1>
-    </div>
-
     <h4 class="preguntacc">¿Tenes alguna receta que quieras compartir en nuestro CuadernoRosa? </h4>
+    
+    
     <div class="formulario">
 
 
       <form>
 
-        <form class="form-floating espacio">
-          <input type="email" class="form-control" id="floatingInputValue" placeholder="tucorreo@example.com"
-            value="doñaRosa@example.com">
+        <form class="form-floating espacio completo">
+          <input type="email" class="form-control padd" id="floatingInputValue" placeholder="tucorreo@example.com"
+            value="donRosa@example.com">
         </form>
 
-        <div class="form-floating espacio">
-          <textarea class="form-control" placeholder="Nombre de la rece" id="floatingTextarea2"
+        <div class="form-floating espacio completo">
+          <textarea class="form-control padd" placeholder="Nombre de la receta" id="floatingTextarea2"
             style="height: 100px"></textarea>
         </div>
-        <div class="form-floating espacio">
-          <textarea class="form-control" placeholder="Ingredientes" id="floatingTextarea2"
+        <div class="form-floating espacio completo">
+          <textarea class="form-control padd" placeholder="Ingredientes. Ej: Harina 0000 250 gr" id="floatingTextarea2"
             style="height: 100px"></textarea>
         </div>
-        <div class="form-floating espacio">
-          <textarea class="form-control" placeholder="Pasos de la preparación" id="floatingTextarea2"
+        <div class="form-floating espacio completo">
+          <textarea class="form-control padd" placeholder="Pasos de la preparación" id="floatingTextarea2"
             style="height: 100px"></textarea>
         </div>
-        <div class="input-group mb-3 espacio">
-          <input type="file" class="form-control" id="inputGroupFile01">
+        <div class="input-group mb-3 espacio completo">
+          <input type="file" class="form-control padd2" id="inputGroupFile01">
         </div>
       </form>
       <div class="container">
         <button type="button" class="btn btn-primary boton boton2" data-toggle="modal"
-          data-target="#dialogo1">Enviar</button>
-
+          data-target="#dialogo1">Publicar</button>
         <div class="modal fade" id="dialogo1">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -96,12 +93,12 @@
 
               <!-- cuerpo del diálogo -->
               <div class="modal-body">
-                ¡Receta enviada exitosamente!
+              ¡Tu receta fue publicada exitosamente!
               </div>
 
               <!-- pie del diálogo -->
               <div class="modal-footer">
-                <a href="/index.html" class="btn btn-primary boton">cerrar</a>
+                <a href="/index.html" class="btn btn-primary boton">listo</a>
 
               </div>
             </div>
@@ -119,17 +116,20 @@
 
   <footer class="footer">
 
-    <div class="container__footer">
-      <div class="box__footer">
-        <h2>Redes Sociales</h2>
-        <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
-        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
 
-      </div>
+    <div class="container__footer">
+        <div class="box__footer">
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 copy navbar-footer">© Copyright CuadernoRosa- 2022. Todos los derechos reservados.
+
+            </div>
+
+        </div>
 
     </div>
 
-  </footer>
+</footer>
+
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>

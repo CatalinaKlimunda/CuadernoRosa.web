@@ -1,16 +1,31 @@
 .comida {
     text-align: center;
+    margin-block-start: 30px;
 }
+
 
 .boton {
     color: #fff;
     background-color: black;
     border-color: black;
-    margin-block-start: 10px;
-    margin-left: 33%;
     width: 100px;
     height: 38px;
-    text-align: center;
+    align-self: center;
+    margin-block-end: 70px;
+    margin-block-start: 15px;
+
+}
+
+.botonopp {
+    margin-block-start: 38%;
+    height: 150px;
+    width: 150px;
+    background-color: gray;
+    border-radius: 100px;
+    border-color: gray;
+    padding-block-end: 5px;
+    font-size: 80px;
+    position: absolute;
 }
 
 .btn-primary:hover {
@@ -24,15 +39,17 @@
 }
 
 .card-deck {
-    width: 1350px;
+    width: 1200px;
     margin-block-end: 50px;
+    margin-inline-start: 0px;
 }
 
 .card-deck2 {
-    width: 400px;
+    width: 1300px;
     margin-block-end: 50px;
     margin-inline-start: 15px;
 }
+
 
 .guardadas {
     margin-inline-start: 40px;
@@ -50,6 +67,8 @@
     opacity: 50%;
 }
 
-.botonopp {
-    width: 120px;
+
+
+.boton4 {
+    margin-inline-start: 82px;
 }
