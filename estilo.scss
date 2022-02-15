@@ -23,6 +23,16 @@ serif;
 //* "recetas" fin *//
 
 
+//* Index inicio *//
+//* navbar inicio *//
+
+.main {
+
+    padding: 3%;
+    width: 70%;
+
+}
+
 p {
 
     font-size: 30px;
@@ -36,8 +46,6 @@ p {
     }
 }
 
-
-//* navbar inicio *//
 
 .bg-dark {
     --bs-bg-opacity: 0;
@@ -62,8 +70,6 @@ nav ul li {
 //* navbar fin *//
 
 
-//* incio "publicidad" *//
-
 .jumbotron {
     background-image: url(/img/fijo2.jpg);
     background-position: center;
@@ -73,6 +79,80 @@ nav ul li {
 
 }
 
+
+.propa {
+
+    font-family: "Anton script=latin rev=2";
+    font-weight: 1000;
+    font-style: oblique;
+}
+
+.t1 {
+    font-size: 150%;
+    margin-top: none;
+    margin-block-end: 50px;
+    margin-block-start: 50px;
+    margin-inline-start: 20px;
+}
+
+.contenedor {
+
+    display: grid;
+    grid-template-areas:
+        "item1 item2 item3 item4";
+
+    grid-template-columns: 325px 325px 325px;
+
+    grid-template-rows: 550px 550px 550px;
+
+
+    .item {
+
+        height: 300px;
+        width: 300px;
+        margin-inline-start: 10px;
+    }
+
+    .item1 {
+
+        grid-area: item1;
+        grid-column: 1/2;
+
+
+    }
+
+    .item2 {
+        grid-area: item2;
+        grid-column: 2/3;
+
+    }
+
+    .item3 {
+        grid-area: item3;
+        grid-column: 3/4;
+
+    }
+
+    .item4 {
+        grid-area: item4;
+        grid-column: 4/5;
+
+    }
+}
+.c2{
+    height: 600px !important;
+}
+
+
+
+
+//* Index fin *//
+
+
+
+//* Perfil inicio *//
+
+
 .jumbotron2 {
     background-image: url(/img/dulces8.jpg);
     color: #ffffff;
@@ -81,6 +161,48 @@ nav ul li {
     text-align: center;
 
 }
+
+//* Perfil fin *//
+
+
+//* Subir inicio *//
+
+.formulario {
+    width: 50%;
+    margin-block-end: 160px;
+    margin-block-start: 40px;
+    margin-inline-start: 400px;
+
+}
+
+.preguntacc {
+    margin-inline-start: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-block-start: 80px;
+}
+
+
+.espacio {
+    margin-block-start: 15px;
+}
+
+
+.añadir {
+    color: white;
+}
+
+
+.añadir:hover {
+    color: rgb(196, 104, 119);
+    border-color: burlywood;
+}
+
+
+
+//* Subir fin *//
+
+//* Nosotros inicio *//
 
 .jumbotron3 {
     background-image: url(/img/dulces12.jpg);
@@ -103,28 +225,62 @@ nav ul li {
 }
 
 
-.añadir {
-    color: white;
+//* Nosotros fin *//
+
+//* Receta inicio *//
+
+.card{
+    border: none;
+}
+.receta1 {
+    margin-left: 2%;
+    width: 85%;
+}
+
+.text1 {
+    margin-block-end: 20px;
+}
+
+.title2 {
+    margin-left: 2%;
 }
 
 
+.lead{
+    font-size: 30px;
+    text-align: center;
+    margin-block-start: 50px;
+    margin-block-end: 50px;
 
-
-.añadir:hover {
-    color: rgb(196, 104, 119);
-    border-color: burlywood;
 }
 
 
+.list-group {
+    font-size: 16px;
 
-.propa {
-
-    font-family: "Anton script=latin rev=2";
-    font-weight: 1000;
-    font-style: oblique;
 }
 
-//* fin "publicidad" *//
+.parrafo {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-inline-start: 25px;
+    margin-block-start: 30px;
+    margin-right: 40px;
+    margin-block-end: 200px;
+
+}
+
+.parrafo2 {
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-inline-start: 30px;
+    margin-block-start: 20px;
+    margin-right: 40px;
+
+}
+
+
+//* Receta fin *//
 
 
 
@@ -154,24 +310,7 @@ nav ul li {
 
 //* fin footer *//
 
-.main {
 
-    padding: 3%;
-    width: 70%;
-
-}
-
-//* inicio subtitulos *//
-
-.t1 {
-    font-size: 150%;
-    margin-top: none;
-    margin-block-end: 50px;
-    margin-block-start: 50px;
-    margin-inline-start: 15px;
-
-
-}
 
 
 $redes: (
@@ -206,8 +345,1030 @@ $color in $redes {
 
 
 
+.boton2 {
+    width: 365px;
+}
+
+.boton3 {
+    background-color: burlywood;
+    border-color: burlywood;
+}
 
 
-@import "_media.scss";
-@import "_cards.scss";
-@import "_receta.scss";
+
+.padd {
+    padding-block-start: 20px;
+    padding-block-end: 40px;
+}
+
+.padd2 {
+    padding-block-start: 3px;
+    padding-inline-start: 2px;
+}
+
+.comida {
+    text-align: center;
+    margin-block-start: 30px;
+}
+
+
+.boton {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+    width: 100px;
+    height: 38px;
+    align-self: center;
+    margin-block-end: 70px;
+    margin-block-start: 15px;
+
+}
+
+.botonopp {
+    margin-block-start: 38%;
+    height: 150px;
+    width: 150px;
+    background-color: gray;
+    border-radius: 100px;
+    border-color: gray;
+    padding-block-end: 5px;
+    font-size: 80px;
+    position: absolute;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: burlywood;
+    border-color: burlywood;
+}
+
+
+.opp {
+    opacity: 50%;
+}
+
+
+.boton4 {
+    margin-inline-start: 82px;
+}
+
+
+.t1 {
+    margin-inline-start: 20px;
+}
+
+
+
+
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+
+    .propa {
+
+        font-family: "Anton script=latin rev=2";
+        font-weight: 1000;
+        font-style: oblique;
+        font-size: 25px;
+    }
+
+
+
+    .contenedor {
+
+        display: grid;
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+            "item7"
+            "item8";
+
+        grid-template-columns: 300px;
+        grid-template-rows: 500px 500px 500px 500px 500px 500px 500px 500px;
+
+
+        .item {
+
+            height: 250px;
+            width: 250px;
+            margin-inline-start: 100px;
+
+        }
+
+        .item1 {
+
+            grid-area: item1;
+            grid-column: 1/2;
+
+
+        }
+
+        .item2 {
+            grid-area: item2;
+            grid-column: 1/2;
+
+        }
+
+        .item3 {
+            grid-area: item3;
+            grid-column: 1/2;
+
+        }
+
+        .item4 {
+            grid-area: item4;
+            grid-column: 1/2;
+
+        }
+
+        .item5 {
+            grid-area: item5;
+            grid-column: 1/2;
+
+        }
+
+        .item6 {
+            grid-area: item6;
+            grid-column: 1/2;
+
+        }
+
+        .item7 {
+            grid-area: item7;
+            grid-column: 1/2;
+
+        }
+
+        .item8 {
+            grid-area: item8;
+            grid-column: 1/2;
+
+        }
+
+    }
+
+    .c2{
+        height: 2000px !important;
+    }
+
+    .comida {
+        text-align: center;
+        margin-block-start: 30px;
+    }
+
+    .t1 {
+        margin-block-start: 70px;
+        margin-inline-start: 20px;
+
+    }
+
+
+
+    .card {
+        border: none;
+        width: 300px;
+        margin-inline-start: 85px;
+        display: ruby;
+    }
+
+
+
+
+    .boton3 {
+        background-color: burlywood;
+        border-color: burlywood;
+    }
+
+    .formulario {
+        margin-left: 90px !important;
+        width: 70% !important;
+
+    }
+
+    .preguntacc {
+        margin-block-start: 80px;
+        font-size: 18px;
+    }
+
+    .jumbotron3 {
+        height: 1200px;
+        background-size: 700px;
+    }
+
+
+    .receta1 {
+        margin-inline-start: 30px;
+    }
+
+
+    .formulario {
+        width: 50%;
+        margin-block-end: 160px;
+        margin-block-start: 40px;
+        margin-inline-start: 400px;
+
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+
+    nav ul li {
+        display: inline;
+        text-align: center;
+        margin-left: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    p {
+
+        font-size: 18px;
+        font-family: 'Trebuchet MS';
+        margin: 15%;
+        margin-inline-start: 30px;
+
+        span {
+            font-family: 'Times New Roman', Times, serif;
+            color: $color2;
+
+        }
+    }
+
+    .c2{
+        height: 1000px !important;
+    }
+
+
+
+    .navbar-nav {
+        padding-left: 5%;
+
+        a.nav-link.nombres {
+            color: white;
+        }
+    }
+
+    .propa {
+
+        font-family: "Anton script=latin rev=2";
+        font-weight: 2000;
+        font-style: oblique;
+        font-size: 25px;
+    }
+
+    .comida {
+        text-align: center;
+        margin-block-start: 30px;
+    }
+
+    .t1 {
+        margin-block-start: 70px;
+        margin-inline-start: 20px;
+
+    }
+
+
+    .contenedor {
+
+        display: grid;
+        grid-template-areas:
+            "item1 item2"
+            "item3 item4"
+            "item5 item6"
+            "item7 item8";
+
+        grid-template-columns: 280px;
+        grid-template-rows: 450px 450px 450px 450px 450px 450px 450px 450px;
+        height: 2000px;
+
+        .item {
+
+            height: 240px;
+            width: 240px;
+            margin-inline-start: 10px;
+
+        }
+
+        .item1 {
+
+            grid-area: item1;
+            grid-column: 1/2;
+
+
+        }
+
+        .item2 {
+            grid-area: item2;
+            grid-column: 2/3;
+
+        }
+
+        .item3 {
+            grid-area: item3;
+            grid-column: 1/2;
+
+        }
+
+        .item4 {
+            grid-area: item4;
+            grid-column: 2/3;
+
+        }
+
+        .item5 {
+            grid-area: item5;
+            grid-column: 1/2;
+
+        }
+
+        .item6 {
+            grid-area: item6;
+            grid-column: 2/3;
+
+        }
+
+        .item7 {
+            grid-area: item7;
+            grid-column: 1/2;
+
+        }
+
+        .item8 {
+            grid-area: item8;
+            grid-column: 2/3;
+
+        }
+
+    }
+
+
+
+    .añadir {
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .boton3 {
+        background-color: burlywood;
+        border-color: burlywood;
+    }
+
+    .formulario {
+        margin-left: 90px ;
+        width: 70%;
+
+    }
+
+    .jumbotron3 {
+        height: 1200px;
+        background-size: 700px;
+    }
+
+
+    .receta1 {
+        margin-inline-start: 30px;
+    }
+
+    .boton2 {
+        width: 205px;
+    }
+
+}
+
+@media only screen and (min-width: 801px) and (max-width: 910px) {
+
+    nav ul li {
+        display: inline;
+        text-align: center;
+        margin-left: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    p {
+
+        font-size: 18px;
+        font-family: 'Trebuchet MS';
+        margin: 15%;
+        margin-inline-start: 30px;
+
+        span {
+            font-family: 'Times New Roman', Times, serif;
+            color: $color2;
+
+        }
+    }
+
+    .bg-dark {
+        --bs-bg-opacity: 0;
+        background-color: $color1 !important;
+    }
+
+    .navbar-nav {
+        padding-left: 5%;
+
+        a.nav-link.nombres {
+            color: white;
+        }
+    }
+
+    .propa {
+
+        font-family: "Anton script=latin rev=2";
+        font-weight: 1000;
+        font-style: oblique;
+        font-size: 25px;
+    }
+
+    .c2{
+        height: 1200px !important;
+    }
+    .comida {
+        text-align: center;
+        margin-block-start: 30px;
+        font-size: 15px;
+    }
+
+    .t1 {
+        margin-block-start: 70px;
+        margin-inline-start: 10px;
+
+    }
+
+
+    .contenedor {
+
+        display: grid;
+        grid-template-areas:
+            "item1 item2"
+            "item3 item4"
+            "item5 item6"
+            "item7 item8";
+
+        grid-template-columns: 390px;
+        grid-template-rows: 550px 550px 550px 550px 550px 550px 550px 550px;
+        height: 2500px;
+
+
+        .item {
+
+            height: 300px;
+            width: 300px;
+            margin-inline-start: 10px;
+
+        }
+
+        .item1 {
+
+            grid-area: item1;
+            grid-column: 1/2;
+
+
+        }
+
+        .item2 {
+            grid-area: item2;
+            grid-column: 2/3;
+
+        }
+
+        .item3 {
+            grid-area: item3;
+            grid-column: 1/2;
+
+        }
+
+        .item4 {
+            grid-area: item4;
+            grid-column: 2/3;
+
+        }
+
+        .item5 {
+            grid-area: item5;
+            grid-column: 1/2;
+
+        }
+
+        .item6 {
+            grid-area: item6;
+            grid-column: 2/3;
+
+        }
+
+        .item7 {
+            grid-area: item7;
+            grid-column: 1/2;
+
+        }
+
+        .item8 {
+            grid-area: item8;
+            grid-column: 2/3;
+
+        }
+
+    }
+
+
+
+    .boton3 {
+        background-color: burlywood;
+        border-color: burlywood;
+    }
+
+    .formulario {
+        margin-left: 90px !important;
+        width: 70% !important;
+
+    }
+
+    .preguntacc {
+        margin-block-start: 80px;
+        font-size: 18px;
+    }
+
+    .jumbotron3 {
+        height: 1200px;
+        background-size: 700px;
+    }
+
+    .boton2 {
+        width: 105px;
+    }
+
+
+    .formulario {
+        width: 50%;
+        margin-block-end: 160px;
+        margin-block-start: 40px;
+        margin-inline-start: 400px;
+
+    }
+
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1000px) {
+
+
+    p {
+
+        font-size: 30px;
+        font-family: 'Trebuchet MS';
+        margin: 15%;
+
+        span {
+            font-family: 'Times New Roman', Times, serif;
+            color: $color2;
+
+        }
+    }
+
+    .c2{
+        height: 1200px !important;
+    }
+
+
+
+    .navbar-nav {
+        padding-left: 25%;
+
+        a.nav-link.nombres {
+            color: white;
+        }
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 20px;
+        margin-inline-start: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    .propa {
+
+        font-family: "Anton script=latin rev=2";
+        font-weight: 1000;
+        font-style: oblique;
+        font-size: 25px;
+    }
+
+    .comida {
+        text-align: center;
+        margin-block-start: 30px;
+        font-size: 20px;
+    }
+
+    .t1 {
+        margin-block-start: 70px;
+        margin-inline-start: 10px;
+
+    }
+
+    .contenedor {
+
+        display: grid;
+        grid-template-areas:
+            "item1 item2"
+            "item3 item4"
+            "item5 item6"
+            "item7 item8";
+
+        grid-template-columns: 500px;
+        grid-template-rows: 600px 600px 600px 600px 600px 600px 600px 600px;
+
+        .item {
+
+            height: 330;
+            width: 330;
+            margin-inline-start: 10px;
+
+        }
+
+        .item1 {
+
+            grid-area: item1;
+            grid-column: 1/2;
+
+
+        }
+
+        .item2 {
+            grid-area: item2;
+            grid-column: 2/3;
+
+        }
+
+        .item3 {
+            grid-area: item3;
+            grid-column: 1/2;
+
+        }
+
+        .item4 {
+            grid-area: item4;
+            grid-column: 2/3;
+
+        }
+
+        .item5 {
+            grid-area: item5;
+            grid-column: 1/2;
+
+        }
+
+        .item6 {
+            grid-area: item6;
+            grid-column: 2/3;
+
+        }
+
+        .item7 {
+            grid-area: item7;
+            grid-column: 1/2;
+
+        }
+
+        .item8 {
+            grid-area: item8;
+            grid-column: 2/3;
+
+        }
+
+    }
+
+
+    .boton3 {
+        background-color: burlywood;
+        border-color: burlywood;
+    }
+
+    .formulario {
+        margin-left: 90px ;
+        width: 70%;
+
+    }
+
+    .preguntacc {
+        margin-block-start: 80px;
+        font-size: 18px;
+    }
+
+
+
+    .jumbotron3 {
+        height: 1200px;
+        background-size: 700px;
+
+    }
+
+    .boton2 {
+        width: 235px;
+    }
+
+
+    .formulario {
+        width: 50%;
+        margin-block-end: 160px;
+        margin-block-start: 40px;
+        margin-inline-start: 400px;
+
+    }
+
+
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1300px) {
+
+
+    p {
+
+        font-size: 30px;
+        font-family: 'Trebuchet MS';
+        margin: 15%;
+
+        span {
+            font-family: 'Times New Roman', Times, serif;
+            color: $color2;
+
+        }
+    }
+
+
+
+    .navbar-nav {
+        padding-left: 25%;
+
+        a.nav-link.nombres {
+            color: white;
+        }
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 20px;
+        margin-inline-start: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    .c2{
+        height: 600px !important;
+    }
+
+    .propa {
+
+        font-family: "Anton script=latin rev=2";
+        font-weight: 1000;
+        font-style: oblique;
+        font-size: 25px;
+    }
+
+    .comida {
+        text-align: center;
+        margin-block-start: 30px;
+        font-size: 20px;
+    }
+
+    .t1 {
+        margin-block-start: 70px;
+        margin-inline-start: 10px;
+
+    }
+
+    .contenedor {
+
+        display: grid;
+        grid-template-areas:
+            "item1 item2 item3 item4";
+
+        grid-template-columns: 240px 240px 240px;
+
+        grid-template-rows: 450px 450px 450px;
+        height: 1000px;
+
+        .item {
+
+            height: 200px;
+            width: 200px;
+            margin-inline-start: 10px;
+        }
+
+        .item1 {
+
+            grid-area: item1;
+            grid-column: 1/2;
+
+
+        }
+
+        .item2 {
+            grid-area: item2;
+            grid-column: 2/3;
+
+        }
+
+        .item3 {
+            grid-area: item3;
+            grid-column: 3/4;
+
+        }
+
+        .item4 {
+            grid-area: item4;
+            grid-column: 4/5;
+
+        }
+    }
+
+
+
+
+    .boton3 {
+        background-color: burlywood;
+        border-color: burlywood;
+    }
+
+    .formulario {
+        margin-left: 90px;
+        width: 70% ;
+
+    }
+
+    .preguntacc {
+        margin-block-start: 80px;
+        font-size: 18px;
+    }
+
+
+    .botonopp {
+        margin-block-start: 85px;
+        height: 70px;
+        width: 70px;
+        font-size: 35px;
+    }
+
+    .jumbotron3 {
+        height: 1200px;
+        background-size: 700px;
+
+    }
+
+    .boton2 {
+        width: 235px;
+    }
+
+
+    .formulario {
+        width: 50%;
+        margin-block-end: 160px;
+        margin-block-start: 40px;
+        margin-inline-start: 400px;
+
+    }
+
+
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1400px) {
+
+
+    p {
+
+        font-size: 30px;
+        font-family: 'Trebuchet MS';
+        margin: 15%;
+
+        span {
+            font-family: 'Times New Roman', Times, serif;
+            color: $color2;
+
+        }
+    }
+
+
+
+    .navbar-nav {
+        padding-left: 25%;
+
+        a.nav-link.nombres {
+            color: white;
+        }
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 20px;
+        margin-inline-start: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    .propa {
+
+        font-family: "Anton script=latin rev=2";
+        font-weight: 1000;
+        font-style: oblique;
+        font-size: 25px;
+    }
+
+    .comida {
+        text-align: center;
+        margin-block-start: 30px;
+        font-size: 20px;
+    }
+
+    .t1 {
+        margin-block-start: 70px;
+        margin-inline-start: 20px;
+
+    }
+
+    .contenedor {
+
+        display: grid;
+        grid-template-areas:
+            "item1 item2 item3 item4";
+
+        grid-template-columns: 300px 300px 300px;
+
+        grid-template-rows: 500px 500px 500px;
+        height: 1000px;
+
+        .item {
+            width: 280px;
+            margin-inline-start: 10px;
+        }
+
+        .item1 {
+
+            grid-area: item1;
+            grid-column: 1/2;
+
+
+        }
+
+        .item2 {
+            grid-area: item2;
+            grid-column: 2/3;
+
+        }
+
+        .item3 {
+            grid-area: item3;
+            grid-column: 3/4;
+
+        }
+
+        .item4 {
+            grid-area: item4;
+            grid-column: 4/5;
+
+        }
+    }
+
+
+
+
+    .boton3 {
+        background-color: burlywood;
+        border-color: burlywood;
+    }
+
+    .formulario {
+        margin-left: 90px;
+        width: 70%;
+
+    }
+
+    .preguntacc {
+        margin-block-start: 80px;
+        font-size: 18px;
+    }
+
+
+    .jumbotron3 {
+        height: 1200px;
+        background-size: 700px;
+
+    }
+
+    .boton2 {
+        width: 235px;
+    }
+
+
+    .formulario {
+        width: 50%;
+        margin-block-end: 160px;
+        margin-block-start: 40px;
+        margin-inline-start: 400px;
+
+    }
+
+
+}
